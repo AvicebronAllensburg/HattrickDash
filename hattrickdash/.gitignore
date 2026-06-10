@@ -1,0 +1,14 @@
+# venv
+.venv/
+__pycache__/
+*.pyc
+
+# Lokale Daten (NIEMALS committen – enthalten Tokens / DB)
+config.json
+data/
+logs/
+
+# Editor
+.idea/
+.vscode/
+.DS_Store

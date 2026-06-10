@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#2d6cdf" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <title>HattrickDash</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script defer src="/static/js/api.js"></script>
+  <script defer src="/static/js/charts.js"></script>
+  <script defer src="/static/js/pitch.js"></script>
+  <script defer src="/static/js/pages/home.js"></script>
+  <script defer src="/static/js/pages/overview.js"></script>
+  <script defer src="/static/js/pages/players.js"></script>
+  <script defer src="/static/js/pages/matches.js"></script>
+  <script defer src="/static/js/pages/lineup.js"></script>
+  <script defer src="/static/js/pages/transfers.js"></script>
+  <script defer src="/static/js/pages/finance.js"></script>
+  <script defer src="/static/js/pages/arena.js"></script>
+  <script defer src="/static/js/pages/training.js"></script>
+  <script defer src="/static/js/pages/youth.js"></script>
+  <script defer src="/static/js/pages/settings.js"></script>
+  <script defer src="/static/js/app.js"></script>
+</head>
+<body>
+  <aside class="sidebar-nav">
+    <div class="brand-block">
+      <div class="brand-logo">⚽</div>
+      <div class="brand-name" id="brand-team-name">HattrickDash</div>
+      <div class="brand-sub" id="brand-team-sub">– lokal –</div>
+    </div>
+
+    <nav class="sidenav">
+      <div class="sidenav-group">
+        <div class="sidenav-group-label">Daten</div>
+        <a href="#/home"      data-route="home">🏠 Home</a>
+        <a href="#/team"      data-route="team">👥 Team</a>
+        <a href="#/matches"   data-route="matches">⚽ Spiele</a>
+        <a href="#/lineup"    data-route="lineup">📋 Aufstellung</a>
+        <a href="#/training"  data-route="training">🏃 Training</a>
+      </div>
+      <div class="sidenav-group">
+        <div class="sidenav-group-label">Vereinsinternes</div>
+        <a href="#/players"   data-route="players">👤 Spieler</a>
+        <a href="#/youth"     data-route="youth">⚽ Jugendmannschaft</a>
+        <a href="#/transfers" data-route="transfers">💰 Transfers</a>
+        <a href="#/finance"   data-route="finance">💶 Finanzen</a>
+        <a href="#/arena"     data-route="arena">🏟️ Stadion</a>
+      </div>
+      <div class="sidenav-group">
+        <div class="sidenav-group-label">System</div>
+        <a href="#/settings"  data-route="settings">⚙ Einstellungen</a>
+      </div>
+    </nav>
+
+    <div class="sidebar-foot">
+      <span id="auth-status">…</span>
+    </div>
+  </aside>
+
+  <header class="topbar">
+    <button class="topbar-burger" id="topbar-burger" aria-label="Menü öffnen" title="Menü">☰</button>
+    <div class="topbar-info" id="topbar-info">
+      <span id="meta-text">Lade…</span>
+    </div>
+    <div class="topbar-actions">
+      <button id="btn-refresh" title="Daten neu vom Backend laden">↻ Aktualisieren</button>
+      <a href="#/settings" class="btn" id="btn-options" title="Einstellungen">⚙ Einstellungen</a>
+    </div>
+  </header>
+
+  <main id="content" class="content">
+    <div class="loading">Lade…</div>
+  </main>
+</body>
+</html>

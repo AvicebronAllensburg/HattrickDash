@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <title>Stufe 6 - Ueberdachtes Grossstadion (50-60k Plätze)</title>
+  <defs>
+    <linearGradient id="grass" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#5fa244"/>
+      <stop offset="1" stop-color="#4a8835"/>
+    </linearGradient>
+    <pattern id="stripes" x="0" y="0" width="20" height="240" patternUnits="userSpaceOnUse">
+      <rect width="10" height="240" fill="#56972d" opacity="0.35"/>
+    </pattern>
+    <linearGradient id="standOuter" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#7c8499"/>
+      <stop offset="1" stop-color="#454a5e"/>
+    </linearGradient>
+    <linearGradient id="seatRed" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#cc4444"/>
+      <stop offset="1" stop-color="#a02222"/>
+    </linearGradient>
+    <linearGradient id="roofTop" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#cfd6e4" stop-opacity="0.65"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Außen -->
+  <rect width="360" height="240" fill="#1a1f2e"/>
+
+  <!-- Sockel -->
+  <rect x="0" y="0" width="360" height="240" fill="url(#standOuter)"/>
+
+  <!-- Tribünen-Innenbereich (rund umlaufend) -->
+  <rect x="20" y="2" width="320" height="38" fill="url(#seatRed)"/>
+  <rect x="20" y="200" width="320" height="38" fill="url(#seatRed)"/>
+  <rect x="2" y="20" width="38" height="200" fill="url(#seatRed)"/>
+  <rect x="320" y="20" width="38" height="200" fill="url(#seatRed)"/>
+  <!-- Sitzreihen -->
+  <g stroke="#a02222" stroke-width="0.4" opacity="0.7">
+    <line x1="22" y1="8" x2="338" y2="8"/>
+    <line x1="22" y1="14" x2="338" y2="14"/>
+    <line x1="22" y1="20" x2="338" y2="20"/>
+    <line x1="22" y1="26" x2="338" y2="26"/>
+    <line x1="22" y1="32" x2="338" y2="32"/>
+    <line x1="22" y1="208" x2="338" y2="208"/>
+    <line x1="22" y1="214" x2="338" y2="214"/>
+    <line x1="22" y1="220" x2="338" y2="220"/>
+    <line x1="22" y1="226" x2="338" y2="226"/>
+    <line x1="22" y1="232" x2="338" y2="232"/>
+    <line x1="8" y1="22" x2="8" y2="218"/>
+    <line x1="14" y1="22" x2="14" y2="218"/>
+    <line x1="20" y1="22" x2="20" y2="218"/>
+    <line x1="26" y1="22" x2="26" y2="218"/>
+    <line x1="32" y1="22" x2="32" y2="218"/>
+    <line x1="328" y1="22" x2="328" y2="218"/>
+    <line x1="334" y1="22" x2="334" y2="218"/>
+    <line x1="340" y1="22" x2="340" y2="218"/>
+    <line x1="346" y1="22" x2="346" y2="218"/>
+    <line x1="352" y1="22" x2="352" y2="218"/>
+  </g>
+
+  <!-- Dach (transluzent über Tribünen) - 4 große Bänder -->
+  <rect x="20" y="2" width="320" height="38" fill="url(#roofTop)" stroke="#aab2c5" stroke-width="0.6"/>
+  <rect x="20" y="200" width="320" height="38" fill="url(#roofTop)" stroke="#aab2c5" stroke-width="0.6"/>
+  <rect x="2" y="20" width="38" height="200" fill="url(#roofTop)" stroke="#aab2c5" stroke-width="0.6"/>
+  <rect x="320" y="20" width="38" height="200" fill="url(#roofTop)" stroke="#aab2c5" stroke-width="0.6"/>
+
+  <!-- Dach-Speichen (von außen nach innen) -->
+  <g stroke="#888" stroke-width="0.4" opacity="0.7">
+    <line x1="40" y1="40" x2="20" y2="2"/>
+    <line x1="100" y1="40" x2="100" y2="2"/>
+    <line x1="180" y1="40" x2="180" y2="2"/>
+    <line x1="260" y1="40" x2="260" y2="2"/>
+    <line x1="320" y1="40" x2="340" y2="2"/>
+    <line x1="40" y1="200" x2="20" y2="238"/>
+    <line x1="100" y1="200" x2="100" y2="238"/>
+    <line x1="180" y1="200" x2="180" y2="238"/>
+    <line x1="260" y1="200" x2="260" y2="238"/>
+    <line x1="320" y1="200" x2="340" y2="238"/>
+    <line x1="40" y1="40" x2="2" y2="20"/>
+    <line x1="40" y1="100" x2="2" y2="100"/>
+    <line x1="40" y1="180" x2="2" y2="180"/>
+    <line x1="320" y1="40" x2="358" y2="20"/>
+    <line x1="320" y1="100" x2="358" y2="100"/>
+    <line x1="320" y1="180" x2="358" y2="180"/>
+  </g>
+
+  <!-- Dach-Highlight (Glanz oben) -->
+  <rect x="20" y="2" width="320" height="3" fill="#fff" opacity="0.6"/>
+
+  <!-- Spielfeld (heller weil Licht) -->
+  <g>
+    <rect x="50" y="40" width="260" height="160" fill="url(#grass)"/>
+    <rect x="50" y="40" width="260" height="160" fill="url(#stripes)"/>
+
+    <rect x="50" y="40" width="260" height="160" fill="none" stroke="white" stroke-width="2"/>
+    <line x1="180" y1="40" x2="180" y2="200" stroke="white" stroke-width="2"/>
+    <circle cx="180" cy="120" r="22" fill="none" stroke="white" stroke-width="2"/>
+    <circle cx="180" cy="120" r="2" fill="white"/>
+
+    <rect x="50" y="78" width="38" height="84" fill="none" stroke="white" stroke-width="2"/>
+    <rect x="50" y="98" width="14" height="44" fill="none" stroke="white" stroke-width="2"/>
+    <circle cx="78" cy="120" r="1.5" fill="white"/>
+    <path d="M 88,108 A 12,12 0 0 1 88,132" fill="none" stroke="white" stroke-width="2"/>
+
+    <rect x="272" y="78" width="38" height="84" fill="none" stroke="white" stroke-width="2"/>
+    <rect x="296" y="98" width="14" height="44" fill="none" stroke="white" stroke-width="2"/>
+    <circle cx="282" cy="120" r="1.5" fill="white"/>
+    <path d="M 272,108 A 12,12 0 0 0 272,132" fill="none" stroke="white" stroke-width="2"/>
+
+    <path d="M 50,46 A 6,6 0 0 0 56,40" fill="none" stroke="white" stroke-width="1.5"/>
+    <path d="M 304,40 A 6,6 0 0 0 310,46" fill="none" stroke="white" stroke-width="1.5"/>
+    <path d="M 50,194 A 6,6 0 0 1 56,200" fill="none" stroke="white" stroke-width="1.5"/>
+    <path d="M 304,200 A 6,6 0 0 1 310,194" fill="none" stroke="white" stroke-width="1.5"/>
+
+    <rect x="44" y="108" width="6" height="24" fill="white" opacity="0.8" stroke="#666" stroke-width="0.5"/>
+    <rect x="310" y="108" width="6" height="24" fill="white" opacity="0.8" stroke="#666" stroke-width="0.5"/>
+
+    <path d="M 50,40 L 53,36 L 53,44 Z" fill="#cc4444"/>
+    <path d="M 310,40 L 307,36 L 307,44 Z" fill="#cc4444"/>
+    <path d="M 50,200 L 53,204 L 53,196 Z" fill="#cc4444"/>
+    <path d="M 310,200 L 307,204 L 307,196 Z" fill="#cc4444"/>
+  </g>
+
+  <!-- Anzeigewürfel oben mittig -->
+  <rect x="170" y="116" width="20" height="8" fill="#1a1f2e" stroke="#5e6478" stroke-width="0.4"/>
+  <rect x="172" y="118" width="16" height="4" fill="#22a722" opacity="0.7"/>
+</svg>

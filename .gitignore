@@ -1,0 +1,45 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+.eggs/
+
+# ===== Virtual Env =====
+.venv/
+venv/
+env/
+
+# ===== Lokale Daten — NIEMALS committen =====
+# Die DB enthaelt die akkumulierten Spieler-Snapshots (private Local-Variante).
+# Logs koennen Gerätenamen / Tokens enthalten.
+hattrickdash/data/
+hattrickdash/logs/
+hattrickdash/config.json
+
+# Lokales Import-Material (private HRF-Files, Screenshots etc.)
+Bilder_Abgleich/
+Import/
+
+# ===== Editor =====
+.idea/
+.vscode/
+.DS_Store
+*.swp
+Thumbs.db
+
+# ===== Build / OS =====
+*.log
+*.tmp
+*.bak
+*~
+*.pid
+hattrickdash/.server.pid
+
+# ===== Lokale Test-Setups (parallel-Worktree fuer Public-Test) =====
+# Nicht in das oeffentliche Repo: persoenliche Wrapper-Skripte fuer
+# parallele Test-Instanz auf abweichendem Port.
+hattrickdash/start_test.bat
+hattrickdash/start_test_hidden.vbs
+hattrickdash/register_test.py

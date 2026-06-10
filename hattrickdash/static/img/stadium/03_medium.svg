@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <title>Stufe 3 - Mittelgrosses Stadion (20-30k Plätze)</title>
+  <defs>
+    <linearGradient id="grass" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#5fa244"/>
+      <stop offset="1" stop-color="#4a8835"/>
+    </linearGradient>
+    <pattern id="stripes" x="0" y="0" width="20" height="240" patternUnits="userSpaceOnUse">
+      <rect width="10" height="240" fill="#56972d" opacity="0.35"/>
+    </pattern>
+    <linearGradient id="standGradH" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#b8c1d4"/>
+      <stop offset="1" stop-color="#7c8499"/>
+    </linearGradient>
+    <linearGradient id="standGradV" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#b8c1d4"/>
+      <stop offset="1" stop-color="#7c8499"/>
+    </linearGradient>
+    <linearGradient id="seatBlue" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#3d6cc4"/>
+      <stop offset="1" stop-color="#244d9c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Boden -->
+  <rect width="360" height="240" fill="#9d9d8a"/>
+
+  <!-- 4 Tribünen rundum -->
+  <!-- Oben (Längsseite, breiter) -->
+  <rect x="40" y="10" width="280" height="30" fill="url(#standGradH)" stroke="#5a6480" stroke-width="0.6"/>
+  <rect x="44" y="14" width="272" height="22" fill="url(#seatBlue)" opacity="0.9"/>
+  <g stroke="#244d9c" stroke-width="0.5" opacity="0.6">
+    <line x1="44" y1="20" x2="316" y2="20"/>
+    <line x1="44" y1="26" x2="316" y2="26"/>
+    <line x1="44" y1="32" x2="316" y2="32"/>
+  </g>
+
+  <!-- Unten (Längsseite) -->
+  <rect x="40" y="200" width="280" height="30" fill="url(#standGradH)" stroke="#5a6480" stroke-width="0.6"/>
+  <rect x="44" y="204" width="272" height="22" fill="url(#seatBlue)" opacity="0.9"/>
+  <g stroke="#244d9c" stroke-width="0.5" opacity="0.6">
+    <line x1="44" y1="210" x2="316" y2="210"/>
+    <line x1="44" y1="216" x2="316" y2="216"/>
+    <line x1="44" y1="222" x2="316" y2="222"/>
+  </g>
+
+  <!-- Links (Hinter Tor) -->
+  <rect x="10" y="40" width="30" height="160" fill="url(#standGradV)" stroke="#5a6480" stroke-width="0.6"/>
+  <rect x="14" y="44" width="22" height="152" fill="url(#seatBlue)" opacity="0.9"/>
+  <g stroke="#244d9c" stroke-width="0.5" opacity="0.6">
+    <line x1="20" y1="44" x2="20" y2="196"/>
+    <line x1="26" y1="44" x2="26" y2="196"/>
+    <line x1="32" y1="44" x2="32" y2="196"/>
+  </g>
+
+  <!-- Rechts (Hinter Tor) -->
+  <rect x="320" y="40" width="30" height="160" fill="url(#standGradV)" stroke="#5a6480" stroke-width="0.6"/>
+  <rect x="324" y="44" width="22" height="152" fill="url(#seatBlue)" opacity="0.9"/>
+  <g stroke="#244d9c" stroke-width="0.5" opacity="0.6">
+    <line x1="328" y1="44" x2="328" y2="196"/>
+    <line x1="334" y1="44" x2="334" y2="196"/>
+    <line x1="340" y1="44" x2="340" y2="196"/>
+  </g>
+
+  <!-- Spielfeld -->
+  <g>
+    <rect x="50" y="40" width="260" height="160" fill="url(#grass)"/>
+    <rect x="50" y="40" width="260" height="160" fill="url(#stripes)"/>
+
+    <rect x="50" y="40" width="260" height="160" fill="none" stroke="white" stroke-width="2"/>
+    <line x1="180" y1="40" x2="180" y2="200" stroke="white" stroke-width="2"/>
+    <circle cx="180" cy="120" r="22" fill="none" stroke="white" stroke-width="2"/>
+    <circle cx="180" cy="120" r="2" fill="white"/>
+
+    <rect x="50" y="78" width="38" height="84" fill="none" stroke="white" stroke-width="2"/>
+    <rect x="50" y="98" width="14" height="44" fill="none" stroke="white" stroke-width="2"/>
+    <circle cx="78" cy="120" r="1.5" fill="white"/>
+    <path d="M 88,108 A 12,12 0 0 1 88,132" fill="none" stroke="white" stroke-width="2"/>
+
+    <rect x="272" y="78" width="38" height="84" fill="none" stroke="white" stroke-width="2"/>
+    <rect x="296" y="98" width="14" height="44" fill="none" stroke="white" stroke-width="2"/>
+    <circle cx="282" cy="120" r="1.5" fill="white"/>
+    <path d="M 272,108 A 12,12 0 0 0 272,132" fill="none" stroke="white" stroke-width="2"/>
+
+    <path d="M 50,46 A 6,6 0 0 0 56,40" fill="none" stroke="white" stroke-width="1.5"/>
+    <path d="M 304,40 A 6,6 0 0 0 310,46" fill="none" stroke="white" stroke-width="1.5"/>
+    <path d="M 50,194 A 6,6 0 0 1 56,200" fill="none" stroke="white" stroke-width="1.5"/>
+    <path d="M 304,200 A 6,6 0 0 1 310,194" fill="none" stroke="white" stroke-width="1.5"/>
+
+    <rect x="44" y="108" width="6" height="24" fill="white" opacity="0.8" stroke="#666" stroke-width="0.5"/>
+    <rect x="310" y="108" width="6" height="24" fill="white" opacity="0.8" stroke="#666" stroke-width="0.5"/>
+
+    <path d="M 50,40 L 53,36 L 53,44 Z" fill="#cc4444"/>
+    <path d="M 310,40 L 307,36 L 307,44 Z" fill="#cc4444"/>
+    <path d="M 50,200 L 53,204 L 53,196 Z" fill="#cc4444"/>
+    <path d="M 310,200 L 307,204 L 307,196 Z" fill="#cc4444"/>
+  </g>
+
+  <!-- Anzeigetafel (oben Mitte, hinter Tribüne) -->
+  <rect x="160" y="3" width="40" height="6" fill="#1a1f2e" stroke="#5e6478" stroke-width="0.4"/>
+  <rect x="162" y="4" width="36" height="3" fill="#22a722" opacity="0.7"/>
+</svg>
